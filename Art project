@@ -17,12 +17,16 @@ function draw() {
       let point1X = i*Ellipse
       let point1Y = j*Ellipse
       
-ellipse(point1X, point1Y, 50,50)
+      //I added variation to the width and height
+      let ellipseHeight = random(50,80)
+      let ellipsewidth = random(40,80)
+ellipse(point1X, point1Y, ellipsewidth,ellipseHeight)
 
       let fillcolorred = random(100,255)
       let fillcolorgreen = random(0)
         let fillcolorblue = random(100,190)
          fill( fillcolorred,fillcolorgreen,fillcolorblue)
+
     }
   }
 }
