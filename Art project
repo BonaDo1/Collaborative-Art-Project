@@ -1,32 +1,28 @@
-let Spread = 50
+let Ellipse = 50
 function setup() {
   createCanvas(400, 400);
   background(220);
-  for(var i = 0;i<10;i++){
-    for(var j = 0;j<10;j++){
-      let blueValue = random(0,255)
-      fill(10,10,blueValue)
-      stroke(260,260,260)
-      let point1X = i*Spread
-      let point1Y = j*Spread
-      let point2X = (i+1)*Spread
-      let point2Y = (j+1)*Spread
-      let point3X = i*Spread
-      let point3Y = (j+1)*Spread
-      let height = random(75)
-      let width = random(25)
-square(point1X, point1Y, 50)
-line(point1X, point1Y, 200, 200);
-       noStroke()
-square(point1X, point1Y, height)  
-square(point2X, point2Y, width)
-square(point3X, point3Y, width)
-     
 
-    }
-  }
+  
 }
 
-function draw() {
 
+  
+// Choosing colors//  
+
+function draw() {
+  
+  for(var i = 0;i<10;i++){
+    for(var j = 0;j<10;j++){
+      let point1X = i*Ellipse
+      let point1Y = j*Ellipse
+      
+ellipse(point1X, point1Y, 50,50)
+
+      let fillred = random(0)
+      let fillgreen = random(0)
+      let fillblue = random(100,360)
+      fill(fillred,fillgreen,fillblue)
+    }
+  }
 }
