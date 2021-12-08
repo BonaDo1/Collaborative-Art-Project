@@ -19,10 +19,10 @@ function draw() {
       
 ellipse(point1X, point1Y, 50,50)
 
-      let fillred = random(0)
-      let fillgreen = random(0)
-      let fillblue = random(100,360)
-      fill(fillred,fillgreen,fillblue)
+      let fillcolorred = random(100,255)
+      let fillcolorgreen = random(0)
+        let fillcolorblue = random(100,190)
+         fill( fillcolorred,fillcolorgreen,fillcolorblue)
     }
   }
 }
