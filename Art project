@@ -21,11 +21,12 @@ function draw() {
       let ellipseHeight = random(50,80)
       let ellipsewidth = random(40,80)
 ellipse(point1X, point1Y, ellipsewidth,ellipseHeight)
-      
-      let fillred = random(0)
-      let fillgreen = random(0)
-      let fillblue = random(100,360)
-      fill(fillred,fillgreen,fillblue)
+
+      let fillcolorred = random(100,255)
+      let fillcolorgreen = random(0)
+        let fillcolorblue = random(100,190)
+         fill( fillcolorred,fillcolorgreen,fillcolorblue)
+
     }
   }
 }
